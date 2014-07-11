@@ -29,9 +29,9 @@ var body = d3.select("body"),
 // var timeline = d3.time.scale()
 
 queue()
-    .defer(d3.json, "../data/world-50m.json")
-    .defer(d3.tsv, "../data/world-country-names.tsv")
-    .defer(d3.csv, "../data/map5mm_country.csv")
+    .defer(d3.json, "data/world-50m.json")
+    .defer(d3.tsv, "data/world-country-names.tsv")
+    .defer(d3.csv, "data/map5mm_country.csv")
     .await(ready);
 
 function ready(err, world, names, monthlyCountByCountry) {
