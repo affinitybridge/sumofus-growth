@@ -1,0 +1,112 @@
+/* *
+ * Sum of Us growh map
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: #f3f3f3;
+  color: #666666;
+  font-size: 13px;
+  line-height: 1.4em;
+  font-family: Helvetica,Arial,sans-serif;
+}
+
+h1, h2, h3, h4 {
+  color: #dc6134;
+  font-weight: normal;
+  text-transform: normal;
+  line-height: 1em;
+}
+
+h1, h2 {
+  font-family: "Myriad Pro",Arial,sans-serif;
+  padding-bottom: 7px;
+}
+
+h1 { font-size: 25px; }
+
+a, a:link {
+  color: #04acbe;
+  cursor: pointer;
+  outline: 0 !important;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #05d9f0;
+  text-decoration: none;
+}
+
+/* -- Header -- */
+#header {
+position: relative;
+height: 50px;
+text-shadow: 1px 1px 1px #ffffff;
+margin: 0 auto;
+text-align: left;
+width: 960px;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#header h1 a {
+  background: #ffffff url(../images/logo.png) no-repeat center 8px;
+  display: block;
+  text-indent: -999em;
+  height: 125px;
+  position: absolute;
+  top: 0;
+  width: 137px;
+  z-index: 999;
+  box-shadow: 0 0 6px #cccccc;
+}
+
+#header .aside {
+  float: right;
+  width: 805px;
+  text-align: right;
+}
+
+#header .aside p {
+  font-size: 20px;
+  margin: 0;
+  padding: 15px 0 0 0;
+}
+
+#header .aside p.slogan {
+  float: left;
+  font-style: italic;
+}
+
+#header .aside p.count {
+  padding-top: 18px;
+}
+
+#header .aside p strong {
+color: #dc6134;
+padding-right: 5px;
+}
+
+
+/* -- Main content -- */
+#main {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
