@@ -45,12 +45,13 @@ a:hover, a:focus {
 
 /* -- Header -- */
 #header {
-position: relative;
-height: 50px;
-text-shadow: 1px 1px 1px #ffffff;
-margin: 0 auto;
-text-align: left;
-width: 960px;
+  position: relative;
+  height: 50px;
+  text-shadow: 1px 1px 1px #ffffff;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: left;
+  width: 960px;
 }
 
 #header h1 {
@@ -72,7 +73,7 @@ width: 960px;
 
 #header .aside {
   float: right;
-  width: 805px;
+  width: 100%;
   text-align: right;
 }
 
@@ -82,12 +83,15 @@ width: 960px;
   padding: 15px 0 0 0;
 }
 
-#header .aside p.slogan {
+#header .aside .slogan {
   float: left;
   font-style: italic;
+  margin-left: 155px;
+  position: relative;
+  top: 2px;
 }
 
-#header .aside p.count {
+#header .aside .count {
   padding-top: 18px;
 }
 
@@ -110,3 +114,15 @@ iframe {
   height: 100%;
   width: 100%;
 }
+
+/*
+ * Layout Styles
+ */
+
+ @media all and (max-width: 959px) {
+
+   /* -- Header */
+   #header > .logo { margin-left: 10px; }
+
+   #header > .aside .count { margin-right:  10px;}
+ }
