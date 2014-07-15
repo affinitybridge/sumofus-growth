@@ -60,15 +60,16 @@ a:hover, a:focus {
 }
 
 #header h1 a {
-  background: #ffffff url(../images/logo.png) no-repeat center 8px;
-  display: block;
-  text-indent: -999em;
-  height: 125px;
-  position: absolute;
-  top: 0;
-  width: 137px;
-  z-index: 999;
+  background: #ffffff url(../images/logo-small.png) no-repeat center center;
   box-shadow: 0 0 6px #cccccc;
+  display: block;
+  height: 65px;
+  margin-left: 20px;
+  position: absolute;
+  text-indent: -999em;
+  top: 0;
+  width: 75px;
+  z-index: 999;
 }
 
 #header .aside {
@@ -86,12 +87,13 @@ a:hover, a:focus {
 #header .aside .slogan {
   float: left;
   font-style: italic;
-  margin-left: 155px;
+  margin-left: 110px;
   position: relative;
   top: 2px;
 }
 
 #header .aside .count {
+  margin-right: 20px;
   padding-top: 18px;
 }
 
@@ -115,14 +117,28 @@ iframe {
   width: 100%;
 }
 
+div.cartodb-zoom {
+  margin-top: 90px;
+}
+
+
 /*
  * Layout Styles
  */
 
- @media all and (max-width: 959px) {
+@media all and (min-width: 1100px) {
 
-   /* -- Header */
-   #header > .logo { margin-left: 10px; }
+   /* -- Header -- */
+  #header h1 a {
+    background-image: url(../images/logo.png);
+    background-position: center 8px;
+    height: 125px;
+    margin-left: 0;
+    width: 137px;
+  }
 
-   #header > .aside .count { margin-right:  10px;}
- }
+  #header .aside .slogan {
+    margin-left: 155px;
+  }
+
+}
