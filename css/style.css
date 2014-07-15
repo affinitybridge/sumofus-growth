@@ -64,7 +64,7 @@ a:hover, a:focus {
   box-shadow: 0 0 6px #cccccc;
   display: block;
   height: 65px;
-  margin-left: 20px;
+  margin-left: 10px;
   position: absolute;
   text-indent: -999em;
   top: 0;
@@ -73,33 +73,28 @@ a:hover, a:focus {
 }
 
 #header .aside {
-  float: right;
+  float: left;
   width: 100%;
-  text-align: right;
+  text-align: left;
 }
 
 #header .aside p {
-  font-size: 20px;
-  margin: 0;
-  padding: 15px 0 0 0;
+  font-size: 16px;
+  margin: 8px 0px 0 90px;
+  padding: 0;
 }
 
 #header .aside .slogan {
-  float: left;
   font-style: italic;
-  margin-left: 110px;
-  position: relative;
-  top: 2px;
 }
 
 #header .aside .count {
-  margin-right: 20px;
-  padding-top: 18px;
+  font-size: 14px;
+  margin-top: 2px;
 }
 
 #header .aside p strong {
 color: #dc6134;
-padding-right: 5px;
 }
 
 
@@ -125,6 +120,47 @@ div.cartodb-zoom {
 /*
  * Layout Styles
  */
+
+@media all and (min-width: 600px) {
+
+  /* -- Header -- */
+  #header h1  a { margin-left: 20px; }
+
+  #header .aside p {
+    font-size: 16px;
+    margin: 0;
+    padding-top: 16px;
+  }
+
+  #header .aside .slogan {
+    float: left;
+    margin-left: 110px;
+    margin-right: 0;
+    position: relative;
+    top: 2px;
+  }
+
+  #header .aside .count {
+    font-size: 16px;
+    margin-right: 20px;
+    text-align: right;
+  }
+
+  #header .aside strong { padding-right: 5px; }
+}
+
+@media all and (min-width: 768px) {
+
+  /* -- Header -- */
+  #header .aside p {
+    font-size: 20px;
+    padding-top: 18px;
+  }
+
+  #header .aside .count {
+    font-size: 20px;
+  }
+}
 
 @media all and (min-width: 1100px) {
 
