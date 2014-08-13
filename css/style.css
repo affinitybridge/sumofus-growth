@@ -136,7 +136,9 @@ header h1 {
 }
 
 .page-landing .lnk-map:after {
-  background: #ffebc8;
+  background: radial-gradient(circle, #fdd29f 50%, #ffebc8 50%);
+  background-size: 150px 150px;
+  background-position: -28px -15px;
   border: 4px solid #db5120;
   box-sizing: border-box;
   border-radius: 25px;
@@ -159,7 +161,7 @@ header h1 {
   .page-landing header h1 a {
     margin-bottom: 15px;
   }
-    
+
   .page-landing > .wrapper {
     height: 360px;
   }
