@@ -63,9 +63,46 @@ header h1 {
  */
 
 
-/*
+/* ----------------------------------------------------------------------------
  * Page landing
- */
+ * -------------------------------------------------------------------------- */
+
+.page-landing {
+  background: url("../images/landing-map.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* -- Header -- */
+.page-landing header {
+  text-align: center;
+}
+
+.page-landing header h1 a {
+  background: url(../images/logo.png) no-repeat center center;
+  display: block;
+  height: 125px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 137px;
+  z-index: 999;
+}
+
+/* -- Main content -- */
+.page-landing main {
+  text-align: center;
+}
+
+.page-landing .p1,
+.page-landing .p2 {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* ----------------------------------------------------------------------------
+ * End of: Page landing
+ * -------------------------------------------------------------------------- */
+
+
 
 
 /* ----------------------------------------------------------------------------
