@@ -71,6 +71,18 @@ header h1 {
   background: url("../images/landing-map.jpg") no-repeat center center;
   background-size: cover;
 }
+
+.page-landing > .wrapper {
+  bottom: 0;
+  height: 240px;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 /* -- Header -- */
 .page-landing header {
   text-align: center;
@@ -96,6 +108,15 @@ header h1 {
 .page-landing .p2 {
   font-size: 16px;
   font-style: italic;
+  margin: 0;
+}
+
+.page-landing .count {
+  color: #666;
+  font-size: 33px;
+  margin: .15em 0 .02em;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 /* ----------------------------------------------------------------------------
