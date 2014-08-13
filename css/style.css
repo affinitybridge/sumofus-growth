@@ -2,6 +2,9 @@
  * Sum of Us growh map
  */
 
+/*
+ * General
+ */
 html,
 body {
   margin: 0;
@@ -43,8 +46,34 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+.hide {
+  display: none !important;
+}
+
+/*
+ * Header
+ */
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Main content
+ */
+
+
+/*
+ * Page landing
+ */
+
+
+/* ----------------------------------------------------------------------------
+ * Page map
+ * -------------------------------------------------------------------------- */
+
 /* -- Header -- */
-#header {
+.page-map header {
   position: relative;
   height: 50px;
   text-shadow: 1px 1px 1px #ffffff;
@@ -54,12 +83,7 @@ a:hover, a:focus {
   width: 960px;
 }
 
-#header h1 {
-  margin: 0;
-  padding: 0;
-}
-
-#header h1 a {
+.page-map header h1 a {
   background: #ffffff url(../images/logo-small.png) no-repeat center center;
   box-shadow: 0 0 6px #cccccc;
   display: block;
@@ -72,34 +96,38 @@ a:hover, a:focus {
   z-index: 999;
 }
 
-#header .aside {
+.page-map header .aside {
   float: left;
   width: 100%;
   text-align: left;
 }
 
-#header .aside p {
+.page-map .slogan,
+.page-map .count {
   font-size: 16px;
   margin: 8px 0px 0 90px;
   padding: 0;
 }
 
-#header .aside .slogan {
+.page-map header strong {
+  color: #dc6134;
+}
+
+.page-map .slogan {
+  color: #666;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 20px;
   font-style: italic;
 }
 
-#header .aside .count {
+.page-map .count {
   font-size: 14px;
   margin-top: 2px;
 }
 
-#header .aside p strong {
-color: #dc6134;
-}
-
 
 /* -- Main content -- */
-#main {
+.page-map main {
   position: absolute;
   top: 50px;
   bottom: 0;
@@ -107,32 +135,29 @@ color: #dc6134;
   right: 0;
 }
 
-iframe {
+.page-map iframe {
   height: 100%;
   width: 100%;
 }
 
-div.cartodb-zoom {
+.page-map div.cartodb-zoom {
   margin-top: 90px;
 }
 
-
-/*
- * Layout Styles
- */
-
+/* -- Responsive Layouts-- */
 @media all and (min-width: 600px) {
 
   /* -- Header -- */
-  #header h1  a { margin-left: 20px; }
+  .page-map header h1  a { margin-left: 20px; }
 
-  #header .aside p {
+  .page-map .slogan,
+  .page-map .count {
     font-size: 16px;
     margin: 0;
     padding-top: 16px;
   }
 
-  #header .aside .slogan {
+  .page-map .slogan {
     float: left;
     margin-left: 110px;
     margin-right: 0;
@@ -140,32 +165,28 @@ div.cartodb-zoom {
     top: 2px;
   }
 
-  #header .aside .count {
-    font-size: 16px;
+  .page-map .count {
     margin-right: 20px;
     text-align: right;
   }
 
-  #header .aside strong { padding-right: 5px; }
+  .page-map header strong { padding-right: 5px; }
 }
 
 @media all and (min-width: 768px) {
 
   /* -- Header -- */
-  #header .aside p {
+  .page-map .slogan,
+  .page-map .count {
     font-size: 20px;
     padding-top: 18px;
-  }
-
-  #header .aside .count {
-    font-size: 20px;
   }
 }
 
 @media all and (min-width: 1100px) {
 
    /* -- Header -- */
-  #header h1 a {
+  .page-map header h1 a {
     background-image: url(../images/logo.png);
     background-position: center 8px;
     height: 125px;
@@ -173,8 +194,12 @@ div.cartodb-zoom {
     width: 137px;
   }
 
-  #header .aside .slogan {
+  .page-map .slogan {
     margin-left: 155px;
   }
 
 }
+
+/* ----------------------------------------------------------------------------
+ * End of: Page map
+ * -------------------------------------------------------------------------- */
