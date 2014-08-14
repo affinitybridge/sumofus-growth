@@ -61,7 +61,33 @@ header h1 {
 /*
  * Main content
  */
+ .social-links {
+   padding: 0;
+ }
 
+.social-links li {
+  list-style: none 0 none;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-links a {
+  background: url("../images/sprite-social.png") no-repeat;
+  display: inline-block;
+  height: 38px;
+  overflow: hidden;
+  text-indent: -999px;
+  width: 40px;
+}
+
+.social-links .facebook a { background-position: 0% 0%; }
+.social-links .facebook a:hover { background-position: 0% 100%; }
+
+.social-links .twitter a { background-position: 50% 0%; }
+.social-links .twitter a:hover { background-position: 50% 100%; }
+
+.social-links .youtube a { background-position: 100% 0%; }
+.social-links .youtube a:hover { background-position: 100% 100%; }
 
 /* ----------------------------------------------------------------------------
  * Page landing
@@ -182,33 +208,8 @@ header h1 {
 }
 
 .page-landing .social-links {
-  padding: 0;
   text-align: center;
 }
-
-.page-landing .social-links li {
-  list-style: none 0 none;
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.page-landing .social-links a {
-  background: url("../images/sprite-social.png") no-repeat;
-  display: inline-block;
-  height: 38px;
-  overflow: hidden;
-  text-indent: -999px;
-  width: 38px;
-}
-
-.page-landing .social-links .facebook a { background-position: 0px 0px; }
-.page-landing .social-links .facebook a:hover { background-position: 0px -38px; }
-
-.page-landing .social-links .twitter a { background-position: -56px 0px; }
-.page-landing .social-links .twitter a:hover { background-position: -56px -38px; }
-
-.page-landing .social-links .youtube a { background-position: -112px 0px; }
-.page-landing .social-links .youtube a:hover { background-position: -112px -38px; }
 
 /* -- Responsive Layouts-- */
 @media all and (min-width: 768px) {
@@ -290,7 +291,7 @@ header h1 {
 .page-map .slogan,
 .page-map .count {
   font-size: 16px;
-  margin: 8px 0px 0 90px;
+  margin: 6px 0px 0 90px;
   padding: 0;
 }
 
@@ -309,6 +310,19 @@ header h1 {
   margin-top: 2px;
 }
 
+.page-map .social-links {
+  margin: 2px 0 0 90px;
+}
+
+.page-map .social-links li {
+  margin: 0 5px 0 0;
+}
+
+.page-map .social-links a {
+  background-size: 366%;
+  height: 23px;
+  width: 25px;
+}
 
 /* -- Main content -- */
 .page-map main {
@@ -329,7 +343,7 @@ header h1 {
 }
 
 /* -- Responsive Layouts-- */
-@media all and (min-width: 600px) {
+@media all and (min-width: 500px) {
 
   /* -- Header -- */
   .page-map header h1  a { margin-left: 20px; }
@@ -355,6 +369,21 @@ header h1 {
   }
 
   .page-map header strong { padding-right: 5px; }
+
+  .page-map .social-links {
+    float: right;
+    margin: 14px 10px 0 0;
+  }
+
+  .page-map .social-links li {
+    margin: 0 0 0 10px;
+  }
+
+  .page-map .social-links a {
+    background-size: 366%;
+    height: 28px;
+    width: 30px;
+  }
 }
 
 @media all and (min-width: 768px) {
