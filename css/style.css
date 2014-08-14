@@ -72,6 +72,11 @@ header h1 {
   background-size: cover;
 }
 
+.page-landing h1,
+.page-landing h2 {
+  font-family: Helvetica,Arial,sans-serif;
+}
+
 .page-landing > .wrapper {
   bottom: 0;
   height: 260px;
@@ -89,13 +94,13 @@ header h1 {
 }
 
 .page-landing header h1 a {
-  background: url(../images/logo.png) no-repeat center center;
+  background: url(../images/sumofus-logo.png) no-repeat center center;
   display: block;
-  height: 125px;
+  height: 124px;
   margin: 0 auto;
   overflow: hidden;
   text-indent: -999em;
-  width: 137px;
+  width: 95px;
   z-index: 999;
 }
 
@@ -126,15 +131,18 @@ header h1 {
   display: inline-block;
   font-size: 10px;
   left: -10px;
-  padding: 10px 20px 10px 10px;
+  padding: 17px 35px 12px 15px;
   position: relative;
   text-transform: uppercase;
 }
 
 .page-landing .lnk-map:hover {
-  background-color: #ca5120;
+  /* background-color: #ca5120; */
+  color: #fdfcfc;
 }
 
+/* With all this code we could avoid the image, but becasue
+   line height differences between browser we are screwed
 .page-landing .lnk-map:after {
   background: radial-gradient(circle, #fdd29f 50%, #ffebc8 50%);
   background-size: 150px 150px;
@@ -153,13 +161,24 @@ header h1 {
   top: -5px;
   width: 50px;
 }
+*/
 
+.page-landing .lnk-map:after {
+  background: url("../images/arrow-btn.svg") no-repeat center center;
+  content: '';
+  display: block;
+  height: 74px;
+  position: absolute;
+  right: -42px;
+  top: -13px;
+  width: 76px;
+}
 
 /* -- Responsive Layouts-- */
 @media all and (min-width: 768px) {
 
   .page-landing header h1 a {
-    margin-bottom: 15px;
+    margin-bottom: 22px;
   }
 
   .page-landing > .wrapper {
@@ -168,16 +187,16 @@ header h1 {
 
   .page-landing .p1,
   .page-landing .p2 {
-    font-size: 40px;
+    font-size: 24px;
   }
 
   .page-landing .count {
-    font-size: 70px;
+    font-size: 72px;
   }
 
   .page-landing .lnk-map {
     font-size: 14px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 }
 /* ----------------------------------------------------------------------------
