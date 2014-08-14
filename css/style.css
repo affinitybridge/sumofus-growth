@@ -79,7 +79,7 @@ header h1 {
 
 .page-landing > .wrapper {
   bottom: 0;
-  height: 260px;
+  height: 300px;
   left: 0;
   margin: auto;
   overflow: hidden;
@@ -97,7 +97,7 @@ header h1 {
   background: url(../images/sumofus-logo.png) no-repeat center center;
   display: block;
   height: 124px;
-  margin: 0 auto;
+  margin: 0 auto 22px auto;
   overflow: hidden;
   text-indent: -999em;
   width: 95px;
@@ -118,7 +118,7 @@ header h1 {
 
 .page-landing .count {
   color: #666;
-  font-size: 33px;
+  font-size: 28px;
   margin: .18em 0 .02em;
   padding: 0;
   text-transform: uppercase;
@@ -131,7 +131,8 @@ header h1 {
   display: inline-block;
   font-size: 10px;
   left: -10px;
-  padding: 17px 35px 12px 15px;
+  margin-top: 10px;
+  padding: 6px 25px 5px 8px;
   position: relative;
   text-transform: uppercase;
 }
@@ -164,14 +165,15 @@ header h1 {
 */
 
 .page-landing .lnk-map:after {
-  background: url("../images/arrow-btn.svg") no-repeat center center;
+  background: url("../images/arrow-btn.png") no-repeat center center;
+  background-size: contain;
   content: '';
   display: block;
-  height: 74px;
+  height: 40px;
   position: absolute;
-  right: -42px;
-  top: -13px;
-  width: 76px;
+  right: -20px;
+  top: -6px;
+  width: 40px;
 }
 
 /* -- Responsive Layouts-- */
@@ -196,7 +198,14 @@ header h1 {
 
   .page-landing .lnk-map {
     font-size: 14px;
-    margin-top: 10px;
+    padding: 17px 35px 12px 15px;
+  }
+
+  .page-landing .lnk-map:after {
+    height: 74px;
+    right: -42px;
+    top: -13px;
+    width: 76px;
   }
 }
 /* ----------------------------------------------------------------------------
