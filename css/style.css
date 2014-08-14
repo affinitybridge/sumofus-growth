@@ -79,7 +79,7 @@ header h1 {
 
 .page-landing > .wrapper {
   bottom: 0;
-  height: 300px;
+  height: 350px;
   left: 0;
   margin: auto;
   overflow: hidden;
@@ -176,6 +176,40 @@ header h1 {
   width: 40px;
 }
 
+/* -- Footer -- */
+.page-landing footer {
+  margin-top: 40px;
+}
+
+.page-landing .social-links {
+  padding: 0;
+  text-align: center;
+}
+
+.page-landing .social-links li {
+  list-style: none 0 none;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.page-landing .social-links a {
+  background: url("../images/sprite-social.png") no-repeat;
+  display: inline-block;
+  height: 38px;
+  overflow: hidden;
+  text-indent: -999px;
+  width: 38px;
+}
+
+.page-landing .social-links .facebook a { background-position: 0px 0px; }
+.page-landing .social-links .facebook a:hover { background-position: 0px -38px; }
+
+.page-landing .social-links .twitter a { background-position: -56px 0px; }
+.page-landing .social-links .twitter a:hover { background-position: -56px -38px; }
+
+.page-landing .social-links .youtube a { background-position: -112px 0px; }
+.page-landing .social-links .youtube a:hover { background-position: -112px -38px; }
+
 /* -- Responsive Layouts-- */
 @media all and (min-width: 768px) {
 
@@ -184,7 +218,7 @@ header h1 {
   }
 
   .page-landing > .wrapper {
-    height: 360px;
+    height: 480px;
   }
 
   .page-landing .p1,
@@ -206,6 +240,10 @@ header h1 {
     right: -42px;
     top: -13px;
     width: 76px;
+  }
+
+  .page-landing footer {
+    margin-top: 90px;
   }
 }
 /* ----------------------------------------------------------------------------
